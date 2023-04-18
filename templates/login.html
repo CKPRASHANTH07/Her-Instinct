@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./../static/css/output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="bg-gradient-to-br from-pink-300 to-purple-300">
+<div class="pb-44">
+    <div class="flex rounded-lg mt-28 mx-auto max-w-sm lg:max-w-4xl">
+          <div class="hidden lg:block lg:w-1/2 bg-cover rounded-xl" style="background-image:url('https://images.unsplash.com/photo-1604650816732-7fc34aaa0505?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=415&q=80')"></div>
+          <div class="w-full ml-10 p-8 lg:w-1/2">
+            <h1 class="text-3xl font-bold text-slate-700 mb-10 font-body text-center tracking-widest"> login </h1>
+            <form method="post">  
+            <div class="mt-4">
+                
+                  <label class="block text-gray-700 text-sm font-bold mb-2">Email Address</label>
+                  <input name="username" class="bg-gray-200 text-gray-700 focus:outline-none focus:border border-gray-300 rounded py-2 px-4 block w-full appearance-none" type="text" name="email">
+              </div>
+              <div class="mt-4">
+                  <div class="flex justify-between">
+                      <label class="block text-gray-700 text-sm font-bold mb-2">Password</label>
+                      
+                  </div>{{msg}}
+                  <input name="password" class="bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 block w-full appearance-none" type="password" name="password">
+                  <a href="#" class="text-xs text-gray-500">Forget Password?</a>
+              </div>
+              <div class="mt-8">
+                  <button class="bg-gray-700 font-body tracking-widest text-white font-bold py-2 px-4 w-full rounded hover:bg-gray-600">let me in</button>
+              </div>
+              <div class="mt-4 flex items-center justify-between">
+                  <span class="border-b w-1/5 md:w-1/4"></span>
+                  <a href="{{url_for('signup')}}" class="text-xs text-gray-500 uppercase">or sign up</a>
+                  <span class="border-b w-1/5 md:w-1/4"></span>
+              </div>
+          </div>
+        </form>
+      </div>
+  </div>
+</body>
+</html>

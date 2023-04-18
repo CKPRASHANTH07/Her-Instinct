@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./../static/css/output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3aafa2d65b.js" crossorigin="anonymous"></script>
+    <script>
+        // JavaScript code to change the image
+const images = ["https://drive.google.com/uc?id=1Lsf6C7SvsVHKsobHS2Tv4UrcDL9LVom3","https://drive.google.com/uc?id=1DMcUCSv5GBNvjFOSYJBft-lDDfyBu10L","https://drive.google.com/uc?id=12YFSNm-0s9vMuQJr55So_e-BnfRXqkaX","https://drive.google.com/uc?id=1PtA53HIYLSPQEtdLe65EeD0GqWoemuUM"];
+const timeInterval = 6000; // 5 seconds
+
+let currentImageIndex = 0;
+
+function changeImage() {
+  currentImageIndex++;
+  if (currentImageIndex === images.length) {
+    currentImageIndex = 0;
+  }
+  const mainImage = document.getElementById("main-image");
+  mainImage.src = images[currentImageIndex];
+}
+
+setInterval(changeImage, timeInterval);
+
+    </script>
+</head>
+
+    <title>Home</title>
+</head>
+<body class="bg-gradient-to-br from-pink-300 to-purple-300 scroll-smooth ">
+    <nav class="bg-gr h-16 m-4 shadow-lg rounded-2xl">
+      
+      <img class="float-left h-16 w-60 rounded-md p-2" src="https://drive.google.com/uc?id=1BlLJXrLvtzM2UZbH2EHI3rgrme6ojVUO">
+        <div class="flex justify-end font-semibold">
+            <button class="pr-6  hover:bg-gray-200 rounded-xl m-1 p-2"><a href="#"></a>home</button>
+            <button class="pr-6  hover:bg-gray-200 rounded-xl m-2 p-2"><a href="#quickie">quickie</a></button>
+            <button class="pr-6  hover:bg-gray-200 rounded-xl m-2 p-2"><a href="#divisions">divisions</a></button>
+            <button class="pr-6  hover:bg-gray-200 rounded-xl m-2 p-2"><a href="#venting">venting</a></button>
+            <button class="pr-6  hover:bg-gray-200 rounded-xl m-2 p-2"><a href="#your_problem">your problem</a></button>
+            <button class="pr-6  hover:bg-gray-200 rounded-xl m-2 p-2"><a href="#outsourcing">outsourcing</a></button>
+            <button class="pr-6  hover:bg-gray-200 rounded-xl m-2 p-2"><a href="#overview">overview</a></button>
+            <button class="pr-6  hover:bg-gray-200 rounded-xl m-2 p-2"><a href="#warm_up">warm up</a></button>
+            <button class="pr-6  hover:bg-gray-200 rounded-xl m-2 p-2"><a href="{{url_for('login')}}">login</a></button>
+        </div>
+    </nav>
+     <div class="flex justify-center"><img class="h-auto w-auto" src=""></div>
+    <div class="h-auto w-auto ml-12 mt-1 mr-12 p-10 bg-gr rounded-2xl shadow-xl grid grid-rows-1 grid-cols-2 gap-6 overflow-hidden">
+          <p class=" h-auto w-auto mt-16 float-left text-2xl leading-loose tracking-wide antialiased font-body text-center overflow-hidden">“When women take care of their health they become their own best friend.”
+<br>—Maya Angelou
+          <div class="bg-gr overflow-hidden">
+            <div id="image-comtainer"></div>
+            <img id="main-image" class="object-cover rounded-xl" src="https://drive.google.com/uc?id=1Lsf6C7SvsVHKsobHS2Tv4UrcDL9LVom3">
+          </div>
+          </div>
+    </div>
+    <div class="grid grid-cols-3 gap-10 m-24">
+        <div class="bg-gr p-5 font-bold text-3xl h-auto w-auto rounded-xl hover:drop-shadow-2xl shadow-red-900 transition ease-out delay-150 hover:-translate-y-2 hover:scale-105 ...">Her Instincts -<br><hr>Our services </div>
+        <div class="bg-gr p-5 font-semibold h-auto w-auto rounded-xl transition ease-out delay-150 hover:-translate-y-2 hover:scale-105 ..."> Dedicatesd online forum and other peer support services where you can talk to peolpe with similar experiences</div>
+        <div class="bg-gr p-5 font-semibold h-auto w-auto rounded-xl transition ease-out delay-150 hover:-translate-y-2 hover:scale-105 ...">Phone chat and e-mail services for confidential and professional support</div>
+        <div class="bg-gr p-5 font-semibold h-auto w-auto rounded-xl transition ease-out delay-150 hover:-translate-y-2 hover:scale-105 ...">Medical Outsourcing Services to get professional support</div>
+        <div class="bg-gr p-5 font-semibold h-auto w-auto rounded-xl transition ease-out delay-150 hover:-translate-y-2 hover:scale-105 ..."> Dedicated Deep learning chat bot to provide support</div>
+        <div class="bg-gr p-5 font-semibold h-auto w-auto rounded-xl transition ease-out delay-150 hover:-translate-y-2 hover:scale-105 ..."> Specialised mental health web app for women community</div>
+      </div>
+      <div id="quickie" class="h-auto w-auto ml-12 mt-10 mr-12">
+       <iframe class=" w-full aspect-video rounded-2xl h-96 hover:aspect-square" src="{{asmr_link}}"></iframe> 
+      </div>
+      <div id="divisions" class="bg-gr h-auto w-auto rounded-xl ml-12 mt-10 mr-12 p-10 transition ease-out delay-150 hover:-translate-y-2 hover:scale-105 ...">
+          <div class="grid grid-cols-3 gap-10 m-5 ">
+          <div class="h-auto w-auto bg-black text-white p-5 rounded-lg"><h1 class="font-bold text-xl">Mental health difficulties</h1>Mental illness, also called mental health disorders, refers to a wide range of mental health conditions — disorders that affect your mood, thinking and behavior. Examples of mental illness include depression, anxiety disorders, schizophrenia, eating disorders and addictive behaviors</div>
+          <div class="h-auto w-auto bg-black text-white p-5 rounded-lg"><h1 class="font-bold text-xl">Supporting Ourselves</h1>Taking good care of yourself is paramount to the success of your recovery process. People in recovery find that their physical, spiritual, and emotional health are all connected, and that supporting one supports the others. Taking care of all aspects of you will increase the likelihood that you stay well.</div>
+          <div class="h-auto w-auto bg-black text-white p-5 rounded-lg"><h1 class="font-bold text-xl">Supporting Someone Else</h1>Mental health problems can be complex. There are many individual differences in the symptoms and how each person responds to different treatment options. However, as with a physical illness, a person with a mental health condition will benefit from the right treatment and support. Having someone to lean on while working through this experience can reduce stress and help them on the road to recovery.</div>
+        </div>
+      </div>
+      <div id="venting" class="bg-gr h-auto w-auto rounded-xl flex justify-center ml-12 mt-10 mr-12 p-10 transition ease-out delay-150 hover:-translate-y-2 hover:scale-105 ...">
+        <svg class="h-44 w-5 mr-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M40.1 467.1l-11.2 9c-3.2 2.5-7.1 3.9-11.1 3.9C8 480 0 472 0 462.2V192C0 86 86 0 192 0S384 86 384 192V462.2c0 9.8-8 17.8-17.8 17.8c-4 0-7.9-1.4-11.1-3.9l-11.2-9c-13.4-10.7-32.8-9-44.1 3.9L269.3 506c-3.3 3.8-8.2 6-13.3 6s-9.9-2.2-13.3-6l-26.6-30.5c-12.7-14.6-35.4-14.6-48.2 0L141.3 506c-3.3 3.8-8.2 6-13.3 6s-9.9-2.2-13.3-6L84.2 471c-11.3-12.9-30.7-14.6-44.1-3.9zM160 192a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm96 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg>
+        &nbsp&nbsp&nbsp<button><h1 class="bg-black ml-7 rounded-lg p-3 text-white"><a href="{{url_for('venting')}}">VENTING</a></h1></button>
+      </div>
+      <div id="your_problem" class="bg-gr h-auto w-auto rounded-xl ml-12 mt-10 mr-12 p-10 transition ease-out delay-150 hover:-translate-y-2 hover:scale-105 ...">
+       <h1 class="text-xl bg-black text-white w-10 text-center p-3 font-bold"> <a href="{{url_for('bot')}}">CHECK WHAT IS YOUR PROBLEM...?</a></h1>
+      </div>
+      <div id="outsourcing" class="bg-gr h-auto w-auto rounded-xl ml-12 mt-10 mr-12 p-10 transition ease-out delay-150 hover:-translate-y-2 hover:scale-105 ...">
+         <h1 class="text-center text-3xl font-semibold">Outsourcing Medical Services</h1>
+         <br>
+         {% for i in oms %}
+         
+         
+         <div class="flex justify-center"><img class="h-32 w-52 p-5 " src="{{i.img}}" alt=""><a class="mt-16" href="{{i.link}}" target="blank">{{i.type}}</a></div>
+         {% endfor %}
+      </div>
+      <div id="overview" class="bg-gr h-auto w-auto rounded-xl ml-12 mt-10 mr-12 mb-10 p-10 transition ease-out delay-150 hover:-translate-y-2 hover:scale-105 ...">
+          <h1 class="font-bold text-center text-lg mb-3">common mental health difficulties</h1>
+        <div class="grid grid-cols-3 gap-10 m-5 ">
+        
+          <div class="h-auto w-auto bg-black text-white p-5 rounded-lg"><h1 class="text-lg text-center text-white">Problems faced by women</h1><br><h1 class="text-semibold  text-center">Age : 0-15</h1>
+            <ul>
+            <ol>Generalised Anxiety</ol>
+            <ol>Social phobias</ol>
+            <ol>Depression</ol>
+            </li>
+          </div>
+          <div class="h-auto w-auto bg-black text-white p-5 rounded-lg"><h1 class="text-lg text-center text-white">Problems faced by women</h1><br><h1 class="text-semibold text-center">Age : 15-50</h1>
+          <li>
+            <ol>Past mistakes</ol>
+            <ol>Worrying about children futures</ol>
+            <ol>Financial problems</ol>
+            </li>
+          </div>
+          <div class="h-auto w-auto bg-black text-white p-5 rounded-lg"><h1 class="text-lg text-center text-white">Problems faced by women</h1><br><h1 class="text-semibold text-center">Age : 50+</h1>
+            <li>
+              <ol>Loneliness</ol>
+              <ol>Anxiety</ol>
+              <ol>Depression</ol>
+              </li>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="content">
+          <div class="top">
+            <div class="logo-details">
+              <i class="fa-solid fa-bolt-lightning"></i>
+              <span class="logo_name">&nbsp&nbspFollow Us On</span>
+            </div>
+          <div class="media-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+body{
+background: linear-gradient(-100deg,rgb(255,235,205),rgb(227,218,201));
+}
+.img1{
+  height:5rem;
+  width:5rem;
+  float:left;
+}
+.button{
+ float:right;
+ border-radius:30px;
+ margin:1rem;
+}
+.button1{
+  background-color:black;
+  color:white;
+  border-radius:30px;
+  font-size:15px;
+  font-weight:20;
+  font-family:Nunito;
+}
+.button1:hover{
+  background-color:white;
+  color:black;
+  border-radius:30px;
+  font-size:15px;
+  font-weight:thin;
+  font-family:Nunito;
+}
+.image2{
+margin-top: 30px;
+margin-left: 50px;
+max-height:1080px;
+max-width:1440px;
+  overflow:hidden;
+}
+
+
+/* Footer */
+.footer{
+  position: absolute;
+ 
+  left: 0;
+  right: 0;
+  margin-top: 00px;
+  height: 200px; /* adjust the height as needed */
+  background-color: #f2ebe3;
+}
+.content .top .logo-details {
+  color:black;
+  font-size: 30px;
+}
+.logo-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo_name {
+  margin:10px;
+  font-size:40px;
+  font-weight: 400;
+  font-family:'Nunito',sans-serif;
+}
+.content .top .media-icons {
+  display: flex;
+  justify-content: center;
+}
+.content .top .media-icons a {
+  display: flex;
+  justify-content: center;
+  height: 25px;
+  width: 25px;
+  margin:  15px;
+  padding:20px;
+  border-radius:50px;
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+.top .media-icons a:nth-child(1) {
+  background: #122122;
+}
+.top .media-icons a:nth-child(1):hover {
+  color: #4267b2;
+  background: #fff;
+  transform: translateY(-3px);
+}
+.top .media-icons a:nth-child(2) {
+  background: #122122;
+}
+.top .media-icons a:nth-child(2):hover {
+  color: #1da1f2;
+  background: #fff;
+  transform: translateY(-3px);
+}
+.top .media-icons a:nth-child(3) {
+  background: #122122;
+}
+.top .media-icons a:nth-child(3):hover {
+  color: #e1306c;
+  background: #fff;
+  transform: translateY(-3px);
+}
+.top .media-icons a:nth-child(4) {
+  background: #122122;
+}
+.top .media-icons a:nth-child(4):hover {
+  color: #0077b5;
+  background: #fff;
+  transform: translateY(-3px);
+}
+.top .media-icons a:nth-child(5) {
+  background: #122122;
+}
+.top .media-icons a:nth-child(5):hover {
+  color: #ff0000;
+  background: #fff;
+  transform: translateY(-3px);
+}
+</style>    
+
+
+     
+
+     
+</body>
+</html>
